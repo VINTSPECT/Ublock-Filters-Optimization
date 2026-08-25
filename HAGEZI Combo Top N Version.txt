@@ -13917,7 +13917,6 @@
 ||adx-rtb-us.anyrtb.com^
 ||adx-u-sg.heytapmobile.com^
 ||adx.4strokemedia.com^
-||adx.ameba.jp^
 ||adx.apicgate.com^
 ||adx.bid^
 ||adx.cda.pl^
@@ -17507,7 +17506,6 @@
 ||c.sf-syn.com^
 ||c.sibnet.ru^
 ||c.sm.cn^
-||c.stat100.ameba.jp^
 ||c.strava.com^
 ||c.talentplatform.us^
 ||c.tensor.art^
@@ -26059,7 +26057,6 @@
 ||ljall.belk.com^
 ||ljc.coupang.com^
 ||ljline.com^
-||lk.ameba.jp^
 ||lkme.cc^
 ||lkqd.net^
 ||lksda.com^
@@ -26076,7 +26073,6 @@
 ||lmstat.sonicwall.com^
 ||ln-ring-fallback.msedge.net^
 ||ln-ring.msedge.net^
-||ln.ameba.jp^
 ||ln.cash.app^
 ||lndpy.com^
 ||lng.xiaohongshu.com^
@@ -30655,7 +30651,6 @@
 ||pps.nab.com.au^
 ||ppwpn.com^
 ||pqutk.anntaylor.com^
-||pr.ameba.jp^
 ||pr.blogflux.com^
 ||pr.dmm.co.jp^
 ||pr.nss.netease.com^
@@ -35886,11 +35881,9 @@
 ||stat.ainvest.com^
 ||stat.airdroid.com^
 ||stat.allfootballapp.com^
-||stat.ameba.jp^
 ||stat.amebame.com^
 ||stat.armvm.com^
 ||stat.azbyka.ru^
-||stat.blogskin.ameba.jp^
 ||stat.bobogames.xyz^
 ||stat.boosty.to^
 ||stat.ciph.chat^
@@ -35935,7 +35928,6 @@
 ||stat.pandora.xiaomi.com^
 ||stat.pdfforge.org^
 ||stat.playfamily.ru^
-||stat.profile.ameba.jp^
 ||stat.pubhtml5.com^
 ||stat.risesome.com^
 ||stat.roboforex.com^
@@ -36613,9 +36605,7 @@
 ||sxjfhh.usatoday.com^
 ||sxmiywsfv.biz^
 ||sxmxpm.nectarsleep.com^
-||sy.ameba.jp^
 ||sy.amebame.com^
-||sy.ameblo.jp^
 ||sy57d8wi.com^
 ||syft-analytics.notion.site^
 ||symplr-analytics-xddc4j3vva-ey.a.run.app^
