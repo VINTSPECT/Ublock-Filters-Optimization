@@ -11003,7 +11003,6 @@ Remove: vercell, vkvideo
 ||binged.it^
 ||bio.link^
 ||bit.do^
-||bit.ly^
 ||bitly.com^
 ||bitly.cx^
 ||bitly.ws^
