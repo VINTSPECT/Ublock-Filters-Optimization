@@ -1,0 +1,519 @@
+! Title: ⚙️ Dandelion Sprout's Annoyances List
+! Version: 22August2026v1-Compilation
+! Expires: 18 hours
+! Description: This list is made in the style of Fanboy's and AdGuard's annoyances lists, to show that I can make a just as good such annoyances list as them. It combines many of my proudest and most frequently maintained international lists, as a proof-of-concept and as a curated list for simplicity's sake.
+! Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
+! Note, 05/11/2025, for "AdGuard for Android" only: If you view this page on raw•githubusercontent•com through the "Source" button in the settings of AdGuard for Android, note that this is NOT the list version that is actually in the app, that the app's list version is catastrophically worse (Missing almost 90% of entries) than my version, and that the app is blatantly falsely describing it as my list version. https://filters.adtidy.org/android/filters/250_optimized.txt is the version that is in the app. Feel free to give an upvote about the false descriptions on https://github.com/AdguardTeam/FiltersRegistry/issues/1147 if you wish to. In the meantime, users should add https://filters.adtidy.org/android/filters/250.txt as a custom list instead.
+
+! The included files and what they block in AdGuard and uBO:
+! • Dandelion Sprout's Anti-Malware List
+! ⌘ IP addresses that host only malware domains and nothing else.
+! ⌘ Domains that major tech groups lost the ownership of.
+! ⌘ PC "optimiser" sponsorships.
+! ⌘ Malicious or tracker-inserting adblockers.
+
+! • Actually Legitimate URL Shortener List
+! ⌘ URL parameters believed to be unnecessary or trackers.
+
+! • Social Share List
+! ⌘ Non-"Social media" sites' links to social media pages.
+! ⌘ "Share page" buttons.
+
+! • I Don't Want to Download Your Browser
+! ⌘ "Download [browser/Acrobat]" buttons.
+
+! • Anti-"Snow marketing" List
+! ⌘ Falling snow on pages, which are either obstructing the page view, are CPU-intensive, or both.
+
+! • Empty Padding Remover
+! ⌘ Gradients when moving your mouse on video embeds.
+! ⌘ A few sites' empty whitespace boxes.
+
+! • Anti-"Functionality Removal" List
+! ⌘ Attempts to prevent text from being copied, let alone normal copying.
+
+! • Anti-"Prayer Times" List
+! ⌘ Prayer time clocks on newssites.
+
+! • Falukorv List
+! ⌘ Blockings of sites in lists where there seems to be insufficient reasons to block them.
+! ⌘ Failsafes in case any lists have catastrophically miswritten entry syntaxes.
+
+! • Anti-"IMDb on non-IMDb sites" List
+! ⌘ Search engines and non-IMDb movie info sites' displaying of IMDb scores, so that users will no longer feel insulted if their favourite shows have a score of around 4.7.
+
+! • Stop Autoplay on Video Sites
+! ⌘ Prevents videos from automatically jumping to other and often unrelated videos after having finished.
+
+! • Anti-"Awful comments" List
+! ⌘ Certain truly awful comment sections that contain only loud screaming, incoherence, and/or absolute nonsense.
+
+! • Browse Websites Without Logging In
+! ⌘ Unnecessary login prompts.
+! ⌘ A few sites' gradient blurring of article previews.
+
+! • Dandelion Sprout's African Languages List
+! ⌘ Aims to block ads on a few websites that are only in languages that are not widely spoken outside Africa (Swahili, Amharic, Hausa, etc.)
+
+! • Ad Removal List for Unusual Ads
+! ⌘ Fake sections on coupon sites that are not actually coupons.
+! ⌘ Ads and annoyances that are specific to Windows desktop programs.
+! ⌘ Extraordinarily obtrusive premium service banners.
+! ⌘ Spammer sections about casinos or slot machines.
+
+! • DailyMotion Simplicity / • Know Your Meme: Pure Browsing Experience / • Wikia: Pure Browsing Experiences
+! ⌘ General annoyances on the sites in question.
+
+! • Anti-"Aİ results in tech situations where Aİ was not asked for" List
+! ⌘ Aİ results above regular search results during regular-mode Google searches.
+! ⌘ Copilot Aİ stuff in Microsoft Word Online.
+
+! • Annoyance List's main file
+! ⌘ Certain sites' entry types that are of relevance to pretty no one.
+! ⌘ The "Anonymous animal" bubbles on Google Docs.
+! ⌘ Obvious honey traps that sites use to detect adblockers.
+! ⌘ YouTube's "Recommended for You" entries in the right-side suggestions bar.
+! ⌘ Various other oddities.
+
+! • (Windows, macOS, and Linux only) Anti-"Custom Cursors" List
+! ⌘ Custom embedded cursors.
+
+! • (Android and iOS only) Staying on the Phone Browser
+! ⌘ Mobile app download banners.
+
+! • (Windows only) Japanese Text Softener
+! ⌘ Hardcoding by sites to use the worst font ever made (MS PGothic), and rare cases of other bad fonts.
+! ⌘ Blurring of a few sites' article previews.
+
+! • (macOS only) Dandelion Sprout's Website Stretcher
+! ⌘ Makes some websites use much more of the screen width, instead of just a thin central column.
+
+
+! What this broad compilation does not block：Newsletters, cookie banners, social media links to companies' pages
+
+
+
+!#if ext_ublock
+!#if !adguard
+!+ NOT_PLATFORM(android)
+!#include Dandelion%20Sprout's%20Anti-Malware%20List.txt
+!#endif
+!#endif
+
+
+
+!#if adguard
+!#include Alternate%20versions%20Anti-Malware%20List/AntiMalwareAdGuard.txt
+!#endif
+
+
+
+!#include SocialShareList.txt
+!#include I%20Don't%20Want%20to%20Download%20Your%20Browser.txt
+!#include BrowseWebsitesWithoutLoggingIn.txt
+!#include StopAutoplayOnYouTube.txt
+!#include AdRemovalListForUnusualAds.txt
+!#include AfricanLanguagesList.txt
+!#include KnowYourMemePureBrowsingExperience.txt
+!#include DailyMotionSimplicity.txt
+!#include WikiaPureBrowsingExperience.txt
+!#include AntiSnowMarketingList.txt
+!#include FalukorvList.txt
+!#include Sensitive%20lists/AntiPrayerTimesList.txt
+!#include AntiFunctionalityRemovalList.txt
+!#include EmptyPaddingRemover.txt
+!#include Anti-«AİinNonAİ»%20List.txt
+!!! !#include Android%20Scum%20Class%20%E2%80%94%20Fake%20notification%20counters.txt
+
+
+
+!+ NOT_OPTIMIZED
+!#include Anti-IMDB%20List.txt
+!+ NOT_OPTIMIZED
+!#include AntiAwfulCommentsList.txt
+
+
+
+!#if !env_legacy
+!#if !env_safari
+!#if !adguard_app_ios
+!#include LegitimateURLShortener.txt
+!#endif
+!#endif
+!#endif
+
+
+
+!#if !env_safari
+!#if !adguard_app_ios
+!#if !env_mobile
+!#if !adguard_app_mac
+!#if !adguard_app_cli
+!#if !adguard_ext_android_cb
+!+ NOT_PLATFORM(android)
+!#include JapaneseTextSoftener.txt
+!#endif
+!#endif
+!#endif
+!#endif
+!#endif
+!#endif
+
+
+
+!#if adguard_app_mac
+! No iMacs have had less than 1600px wide monitors since 2006, MacBook Pro since 2012, or MacBook Air since 2017. Thus I'm taking a gamble by embedding this for Mac users:
+!+ NOT_OPTIMIZED
+!#include Dandelion%20Sprout's%20Website%20Stretcher.txt
+!#endif
+
+
+
+! AdGuard was known as of early 2025 to not be able to handle "env_mobile" correctly, necessitating a number of semi-clone syntaxing to handle their products.
+!#if ext_ublock
+!#if !env_mobile
+!#include stayingonbrowser/Staying%20On%20The%20Phone%20Browser
+!#include Anti-'Custom%20cursors'%20List.txt
+!#endif
+!#endif
+
+
+
+!#if adguard
+!#if !adguard_app_windows
+!#if !adguard_app_mac
+!#if !adguard_app_cli
+!#if !adguard_ext_edge
+!#if !adguard_ext_opera
+!#include stayingonbrowser/Staying%20On%20The%20Phone%20Browser
+!#include Anti-'Custom%20cursors'%20List.txt
+!#endif
+!#endif
+!#endif
+!#endif
+!#endif
+!#endif
+
+
+
+! ————— 'Helpful list for maintainers of and contributors to Adfilt' (Will get its own subfile once I've got spare energy to extend the anti-'Wrong upload place' section further) —————
+
+! Marks completed subthreads in https://github.com/DandelionSprout/adfilt/discussions/163 as complated, by marking them as green
+github.com##html:has(meta[content$="/DandelionSprout/adfilt/discussions/163"]) .js-timeline-item > .TimelineItem > div[id^=discussioncomment-]:has-text(/^.*(I have fixed it in |This has been fixed in|It has now been fixed in ).*$/i) .timeline-comment:style(background-color: #cee4c5 !important)
+github.com##html:has(meta[content$="/DandelionSprout/adfilt/discussions/163"]) .js-timeline-item > .TimelineItem > div[id^=discussioncomment-]:has-text(/^.*(I have fixed it in |This has been fixed in|It has now been fixed in ).*$/i) .timeline-comment > div:style(background-color: #cee4c5 !important)
+github.com##html:has(meta[content$="/DandelionSprout/adfilt/discussions/163"]) .js-timeline-item > .TimelineItem > div[id^=discussioncomment-]:has-text(/^.*(I have fixed it in |This has been fixed in|It has now been fixed in ).*$/i) .timeline-comment > div > div:style(background-color: #cee4c5 !important)
+
+! ————— Entries that are currently specific to this compilation —————
+
+! Removes listings in certain lists, that are simply unwanted and unwarranted space wasters
+!+ NOT_OPTIMIZED
+freelancer.com##.PageProjectViewLogout-freelancerInfo:has(.small-flag.bangladesh)
+!+ NOT_OPTIMIZED
+whynohttps.com##tbody > tr:has([src="/flags/4x3/cn.svg"])
+2fa.directory##.table-danger
+manage.ntppool.org#?#span[id^=server_]:has(.deletion):has-text(/^.*(-[3-9]\d|-100).*$/)
+! https://github.com/DandelionSprout/adfilt/issues/609
+quora.com###mainContent > div > .q-box:has(.q-inline.qu-mr--small)
+quora.com###mainContent > div > .qu-borderRadius--small:has(> [class=q-box])
+
+! Removes those creepy square bubbles on Google Documents about how many people that are watching every move you make there
+docs.google.com###docs-presence
+
+! Fake insects crawling all over the screen
+forums.lanik.us##div.bug
+||freshports.org/images/notbug.gif^
+
+! Fix for Chrome suddenly opening tabs that ultimately lead to MSN, whenever internet access gets wobbly
+! Note - 20th of October 2023：This is likely caused by ASUS routers' failover system for Dual WAN, but the entry will remain for convenience's sake.
+!!!||msftconnecttest.com^$all (https://github.com/AdguardTeam/AdguardFilters/issues/173713)
+://go.microsoft.com/fwlink/?LinkID=219472^$all
+
+! Combined cookie banner, app banner, and deliveryman job listing (Not suited for Nordic Filters)
+foodora.*##.top-banner-container
+foodora.*##.page-wrapper.order-component:style(margin-top: 128px !important)
+foodora.*##.user-wrapper + .order-components:style(top: 64px !important)
+
+! Fake screen smudge
+||dinreisevaksine.no/wp-content/themes/dbh/assets/images/background.jpg^
+
+! AAB prompts
+/^https://[a-z]{8,25}\.com/v2[a-zA-Z0-9_-]{70,}$/$xmlhttprequest,ping,third-party,important
+!#if !ext_ublock
+34.110.179.148$network
+35.244.133.240$network
+[2600:1901:0:7ec2::1]$network
+[2600:1901:0:809c::1]$network
+!#endif
+!#if ext_ublock
+*$ipaddress=34.110.179.148
+*$ipaddress=35.244.133.240
+*$ipaddress=2600:1901:0:7ec2::1
+*$ipaddress=2600:1901:0:809c::1
+!#endif
+! https://github.com/AdguardTeam/AdguardFilters/issues/87299
+@@/favicon.ico|
+@@/favicon1.ico|
+@@/doubleclick.ico|
+! filmmagasinetNO
+@@/adsanity-adblock-detection^$domain=~github.com|~gitlab.*
+! https://www•nbcnews•com/news/latino/us-halts-plan-remove-iconic-stray-cats-historic-area-puerto-ricos-capi-rcna170329
+@@://adserver.adtech.advertising.
+!! Just to be sure
+@@://adserver.advertising.adtech.$third-party
+@@://adtech.adserver.advertising.$third-party
+@@://adtech.advertising.adserver.$third-party
+@@://advertising.adtech.adserver.$third-party
+@@://advertising.adserver.adtech.$third-party
+! https://www.rawstory.com/canada-2671862410/ + https://www.cbc.ca/news/politics, based on the uBO logger's detected matches (29/04/2025)
+#@#.adSense
+##.adSense:not(html,body,:empty)
+#@#.adContent
+##.adContent:not(html,body,:empty)
+#@#.ad-text
+##.ad-text:not(html,body,:empty)
+#@#.adBlock
+##.adBlock:not(html,body,:empty)
+#@#.ad-banners
+##.ad-banners:not(html,body,:empty)
+! Other entries inspired by the above
+#@#.ad-below
+##.ad-below:not(html,body,:empty)
+#@#.ad-display
+##.ad-display:not(html,body,:empty)
+#@#.ad-displayed
+##.ad-displayed:not(html,body,:empty)
+#@#.ad-item
+##.ad-item:not(html,body,:empty)
+#@#.ad-leaderboard
+##.ad-leaderboard:not(html,body,:empty)
+#@#.ad-native
+##.ad-native:not(html,body,:empty)
+#@#.ad-sense
+##.ad-sense:not(html,body,:empty)
+!!!#@#.ad-unit
+!!!##.ad-unit:not(html,body,:empty)
+#@#.adBox
+##.adBox:not(html,body,:empty)
+#@#.pub_300x250
+##.pub_300x250:not(html,body,:empty)
+#@#.pub_300x250m
+##.pub_300x250m:not(html,body,:empty)
+#@#.pub_728x90
+##.pub_728x90:not(html,body,:empty)
+#@#.text-ad
+##.text-ad:not(html,body,:empty)
+#@#.text-ad-links
+##.text-ad-links:not(html,body,:empty)
+#@#.text-ads
+##.text-ads:not(html,body,:empty)
+#@#.text_ad
+##.text_ad:not(html,body,:empty)
+#@#.text_ads
+##.text_ads:not(html,body,:empty)
+#@#.textad
+##.textad:not(html,body,:empty)
+#@#.textAd
+##.textAd:not(html,body,:empty)
+! uBO's logger on https://www•leboncoin•fr/deposer-une-annonce (07/05/2025); it doesn't seem to trigger AAB, but it's very obvious what that type of script tries to do.
+@@/adblock-detection/prebid.js|
+
+! Suggestion algorithms considered by tens of millions of humans to be dangerous to the human species.
+! In light of several dozen end-users wanting the suggestions back, I've had to give in to the pressure and instead only block ones tagged as "New" and "Suggested for you".
+! https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Images/YouTube%20suggestion%20feed%20block%20reason.webp
+! https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Images/YouTube%20suggestion%20feed%20block%20reason%202.webp
+! https://techcrunch.com/2021/07/07/youtubes-recommender-ai-still-a-horrorshow-finds-major-crowdsourced-study
+! https://assets.mofoprod.net/network/documents/Mozilla_YouTube_Regrets_Report.pdf
+! https://www.techtimes.com/articles/252624/20200917/youtubes-horrible-recommendations-could-affect-younger-users-and-you-could-help-fix-it.htm
+! https://new.reddit.com/r/insanepeoplefacebook/comments/17ys1zw/comment/k9v92xs/
+!!!youtube.com##ytd-watch-next-secondary-results-renderer
+www.youtube.com##.ytd-watch-flexy #dismissible:has(.badge-style-type-simple)
+! For YouTube's searches. Goodness knows why YouTube would want to promote racist fakers in YT searches too. I literally just searched for "naruto rocks", as in the song, and the results in the "Others watch" section had one of the videos be an obvious FSB agent spreading blatant lies about NYC.
+! (https://github.com/AdguardTeam/AdguardFilters/issues/187851#issuecomment-2543168740)
+www.youtube.com##ytd-video-renderer ~ ytd-shelf-renderer[thumbnail-style]
+
+! Links to party compatibility testers in article pages
+! Requested by https://github.com/DandelionSprout/adfilt/issues/63#issuecomment-903333579
+tv2.no##.banner
+
+! Makes real estate classifieds on FinnNO uniformly sized again, and reverses the effects of the site's large price increase for estate brokers to get large thumbnails
+! https://www•nettavisen•no/okonomi/raser-over-nye-priser-for-boligsalg-pa-finn-no-forbrukerne-er-fratatt-ethvert-valg/s/12-95-3424235759
+! https://github.com/DandelionSprout/adfilt/issues/466
+www.finn.no##+js(rc, ads__unit--premium, .ads__unit, stay)
+
+! Miniplayers that scroll down alongside articles
+! https://github.com/DandelionSprout/adfilt/issues/587#issuecomment-1116114213
+!#if false
+positivr.fr##.viously-sticked
+!#endif
+positivr.fr##.viously-sticked:style(position: absolute !important; top: 0 !important; left: 0 !important; bottom: 0 !important; right: 0 !important; width: 100% !important;  height: 100% !important; z-index: 1 !important; display: block !important)
+positivr.fr##.viously-sticked #unstick-button
+! https://github.com/DandelionSprout/adfilt/issues/1175
+youtube.com,~m.youtube.com##:not(:matches-path(/watch)):not(:matches-path(/embed)) #movie_player video:remove()
+youtube.com,~m.youtube.com##:not(:matches-path(/watch)):not(:matches-path(/embed)) ytd-miniplayer:remove()
+youtube.com,~m.youtube.com##.ytp-miniplayer-button
+
+!#if !env_mobile
+! https://github.com/AdguardTeam/AdguardFilters/issues/124667 (Probably can't be in Falukorv List because that list adds whitelistings, not remove them.)
+@@://googleadservices.com^|$badfilter
+!#endif
+
+! I don't trust those pings very much
+$third-party,denyallow=microsoft.com,domain=store.rg-adguard.net
+! AOC i-Menu
+||h5data.talkingdata.net^$3p
+
+! Mobile Browser Spacesaver
+fandom.com##.notifications-box
+
+! SEO textwalls
+flipkart.com##div[style^=flex-grow] div:first-of-type + div.col
+flipkart.com##footer section + div:last-of-type
+
+! For unclear reasons (e.g. on peertube•devol•it), the loading spinner simply would not go away despite the stream clearly loading correctly.
+###custom-css .vjs-loading-spinner
+
+! https://github.com/DandelionSprout/adfilt/pull/956
+valdemarsro.dk###after-recipe .content
+valdemarsro.dk##a[href$="ttps://www.valdemarsro.dk/valdemarsro-premium/"]
+valdemarsro.dk##.banner-horizontal-1
+valdemarsro.dk##.banner-vertical-1
+valdemarsro.dk##.kogebog-side
+valdemarsro.dk###recipe-intro p:last-of-type
+
+!#if env_chromium
+! In rare cases, most visibly on Wikipedia's language selection table, Meitei text would refuse to render in Chrome, even if the relevant fonts had been installed.
+en.wikipedia.org,www.wikipedia.org#?#:is(p,a):has-text(/[ꯀ-꯹ꫠ-꫶]/):style(font-family:sans-serif,"Noto Sans Meetei Mayek","Eeyek","Eeyek Unicode","Nirmala UI")
+!#endif
+
+! Just in case, since almost every SVG file on the internet has W3's URLs listed with "http" (More cases are in Anti-Malware List)
+||www.facebook.com/2008/$csp=upgrade-insecure-requests
+
+! If Bandcamp wishes to enforce a limit on online track plays, surely they could at least have dropped the comically obvious dark pattern
+.bcbits.com/img/heartbreak.png^
+
+! So that people who uninstall Chrome can complete the "Why did you uninstall Chrome?" survey (Caused by AdGuard Popups Filter)
+@@||gstatic.com/uservoice/surveys/resources/prod/js/survey/survey_binary$script,domain=~support.google.com
+google.*#@##google-hats-survey
+
+! https://www•independent•co•uk/news/world/americas/us-politics/nsa-inappropriate-chat-fired-gabbard-b2705027.html notification prompt (For list users with neither AdGuard Tracking Protection or EasyPrivacy; 27/02/2025)
+||appboycdn.com^$third-party
+independent.co.uk,indy100.com##.notification-prompt
+
+! Pretty frequent "Make us your default search engine" prompts
+!!!qwant.com##div[class^=_][class*=" "]:last-of-type:has(>div>:is([href*="://chromewebstore."],[href*="://addons.mozilla.org/"]))
+qwant.com##main > div:last-of-type:has(>div>a:is([href*="://chromewebstore."],[href*="://addons.mozilla."]):not([data-testid]))
+qwant.com###root > div[style="display: block;"] > div[class*=" "] > div[class*=" "]:has(img[src^="data:image/svg+xml;base64,PHN2ZyB4b"])
+
+! Because many people think such test sites are industry standard tools, which they're (unfortunately?) not.
+/fakepage.html|$important
+/ads.js^$domain=tracksong.github.io|adblock.turtleneck.com,important
+/pagead.js^$domain=adblock.turtleneck.com,important
+@@$xhr,3p,redirect-rule=nooptext:-1,method=head,domain=superadblocktest.com
+@@||doubleclick.net^$xhr,redirect-rule=noop.txt,domain=superadblocktest.com
+@@||pagead2.googlesyndication.com^$xhr,redirect-rule=noop.js,domain=superadblocktest.com
+|https://adblock.*/js/widget/ads.js|$1p
+|https://adblock.*/js/pagead.js|$1p
+/bugsnag.$domain=adblock-tester.*
+||js.sentry-cdn.com^$domain=adblock-tester.*
+@@$redirect-rule,domain=adblock-tester.*
+
+! GPU slaughterers.
+!! Spinning animations that almost cooked my Nvidia 3060 to a boiled shrimp single-handedly
+corsproxy.io,raycast.com##canvas
+
+! Blatant misuse of browsers' detection of when a mouse cursor has left the window.
+!! https://www•techbloat•com/how-to-permanently-set-affinity-for-a-program-windows-11.html (06/06/2025)
+##[id$=-exit-modal-bg]
+
+! After I stopped using Nitro Standard, there's going to be   a   l o t   more Discord entries in this list from this point (13/07/2025) on.
+://discord.com/api/v*/bogo-promotions^
+://discord.com/api/v*/premium-marketing^
+discord.com##div[data-list-item-id*=skill-trees] + div[class*=" unreadImportant"]
+discord.com##div[data-list-item-id*=skill-trees] ~ div path[d^="M12 23a11 11 0 "]
+
+! DeviantArt, because of course that site would mess things up.
+! Transparent floaty on bottom
+www.deviantart.com##.surface-primary[class^=theme-] > div[class^=_][class*=" _"]:last-of-type
+! Frequently empty box in the rightside bar
+!!!www.deviantart.com##div[class]:has(> div[style^="width: "] > iframe[title*=DealerAdIframe i])
+! One of the native user promo boxes in the rightside bar has apparently begun to show unambiguous porn. That part is normal enough, but not when I'm not even logged in.
+www.deviantart.com##div[role=complementary] > div:not([class*=_]):has(a[href*="/subscriptions?tier="])
+! Fullpage transparent overlay when having logged in, because of course there would be
+!!!www.deviantart.com##div.ReactModalPortal + div[class^=_]:has(iframe[title*=DealerAdIframe i])
+
+! Constantly shaking, un-emptiable, fake bell+number notification in top bar
+teknikproffset.*##.seg-promotion-wrapper
+
+! Tends to be sky-high on users' requests for Nordic Filters, but legally cannot be blocked in that list. So I'm blocking it as an annoyance instead.
+||proshop.*/Images/Proshop-GIF-.gif^
+
+! Very red warning colouring when being about to incorrectly upload Anti-Malware List generated files to the Nordic Filters folder, or the other way around
+github.com##.clearfix:has(h1:has-text(/^Uploading files .* versions Anti-Malware List$/)):has(div.js-filename:has-text(/^NordicFilters.*$/)):style(background-color:red!important)
+github.com##.clearfix:has(h1:has-text(/^Uploading files .*NorwegianExperimentalList .*$/)):has(div.js-filename:has-text(/^AntiMalware.*$/)):style(background-color:red!important)
+
+
+
+! You all know those constant popups that   a   l o t   of websites show whenever the mouse cursor goes outside the page window area? I think I've found a fix for it, and I have solid confidence in that fix thus far. (24/09/2025)
+!#if !env_mobile
+!#if !adguard_app_android
+!#if !adguard_app_ios
+!#if !adguard_ext_android_cb
+!+ NOT_OPTIMIZED
+!!!*,~google.*,~gr##+js(acs, addEventListener, mouseleave) (https://github.com/DandelionSprout/adfilt/issues/1183)
+!#endif
+!#endif
+!#endif
+!#endif
+! (https://github.com/DandelionSprout/adfilt/issues/1208 + https://github.com/AdguardTeam/Scriptlets/issues/539)
+!#if !env_mobile
+!#if !adguard
+!!!*##+js(aeld, mouseleave) (Causes hover-notes to lag heavily on e.g. Wikipedia and GitHub)
+!#endif
+!#endif
+
+
+
+! Discord ads for Perplexity Aİ.
+&client_ad_session_id=
+
+! Pretty high up on "Things practically no one asked for": What seems to be a video newsfeed in the upper left of a game's main menu
+||anyclip.com^$app=TETR.IO.exe
+
+! https://github.com/DandelionSprout/adfilt/issues/1189
+duckduckgo.com,duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion##button:first-of-type + div:last-of-type[class*=" "]:has(button)
+
+! Tried out Batch Text File Editor once, closed the program, and was greeted with the browser opening a somewhat intrusive page
+||binarymark.com/products/*/thank-you-for-using^$popup
+||binarymark.com/products/*/uninstalled^$popup
+! Similar thingie for AOMEI Partition Assistant
+||diskpart.com/*?source=auto-popup^$popup
+
+! Begging banners that come across as psycho spouses who shout "Why are you leaving me?! Am I not good enough for you?!" when the other party simply went to the supermarket to buy breakfast cereal.
+! https://www•qwant•com/?q=goog+tld&t=web (27/12/2025)
+www.qwant.com###root:has(a[href*=goo]) section div[class]:not([data-testid],[style],[class*=" "],[class*=_]):has([id^=Piwik_])
+
+! Pointless blurring of the modules of electricity prices (08/01/2026)
+adressa.no##.strom .overlay:style(background:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important)
+
+! Redirections to Bing/MSN from other Microsoft sites, especially those where simply the original links were dead so they made them redirect to Bing instead.
+://www.bing.com/?shorturl=$doc
+
+! There's probably a reason why the domain has clogged up urlscanIO recently (Early May 2026)
+!#if ext_ublock
+!#if !env_legacy
+||dns-speed.tail-f.de^$doc,reason="Contacts an absolutely ungodly amount of trackers."
+||speed.tail-f.de^$doc,reason="Contacts an absolutely ungodly amount of trackers."
+!#endif
+!#endif
+
+!#if !ext_ublock
+||dns-speed.tail-f.de^$doc,domain~=contacts_an_absolutely_ungodly_amount_of_trackers.*
+||speed.tail-f.de^$doc,domain~=contacts_an_absolutely_ungodly_amount_of_trackers.*
+!#endif
+
+! "Get more space and powerful productivity features" prompt
+! https://github.com/DandelionSprout/adfilt/issues/1227
+dropbox.com,linkedin.com##+js(set-local-storage-item, mapslitepromosdismissed, 1)
+
+! Hopefully upgrading various sites to HTTPS when the sites don't do it themselves.
+$csp=upgrade-insecure-requests,domain=nongnu.org|download.nvidia.com
