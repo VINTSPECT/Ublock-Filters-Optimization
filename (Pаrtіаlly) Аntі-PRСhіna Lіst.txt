@@ -1,0 +1,292 @@
+! Title: 🍃 (Pаrtіаlly) Аntі-PRСhіna Lіst
+! Version: 30March2026v1-Alpha
+! Expires: 5 days
+! Homepage: https://github.com/DandelionSprout/adfilt/tree/master
+! Description: Me and РR-Сhіna don't get particularly well along, because 1) I read news, 2) I'm not planning to forget Wuhаn, 3) I'm extremely ashamed by how Norwegian governments bootlicked РRС from 2011-16 for something they were not responsible for, 4) hіstоrу dеnіal in general, and 5) being _extremely_ sensitive to even the tiniest of feedbacks (Rolling eyes, HоlоLіve, etc.).
+! Note 1: "Partially" means that it mostly targets PRСhіnеse state lіеs, stаte lіars, stаte-еsque soаial medіa, and state іnsаnitу. Those few ordinary people who are looking to get access to non-РRС internet services are of course not targeted.
+! Note 2: If you are in need to blоck all IP addresses known to be registered at РRС-based AS IPs, though the methods only support CIDR tools (Few of which exist), https://raw.githubusercontent.com/ipverse/rir-ip/master/country/cn/ipv4-aggregated.txt and https://raw.githubusercontent.com/ipverse/rir-ip/master/country/cn/ipv6-aggregated.txt could be used.
+
+!#if !env_mv3
+!#if !ext_ubol
+
+||cn^$all
+||alidns.com^$all
+||baidu.com^$all
+||aliyuncs.com^
+://ysf.qiyukf.net^
+||sogoucdn.com^
+||campusphere.net^
+||chitubox.com^
+||cn.bing.com^
+
+! Sсript blоcking for РRC sites
+*/log/$domain=bilibili.com
+/bili-collect.js$all
+||bilibili.com^*/data/collector^$all
+||bilibili.com/x/click-interface^$all
+||bilibili.com/*/is_forbid^$all
+||bilibili.com/*/log-reporter.js$all
+*/laputa-header/$all
+||hdslb.com/*/pcdn-$all
+||hdslb.com/*/nc-loader-$all
+||cm.bilibili.com^$all
+||boss.hdslb.com^$all
+
+! 🇨🇳 Antі-'AlіExprеss'
+www.google.*##span[jsslot] div[data-tbnid]:has(a[href*=aliexpress])
+www.google.*##span[jsslot] div[data-tbnid]:has(a[href*="alibaba.com"])
+
+! Cоnspіraсy sіtеs (РR-Сhinа-related sites, but may be based elsewhere; based on https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Sensitive%20lists/TabloidRemover.txt)
+||mintpressnews.com^$all
+||thegrayzone.com^$all
+||helsinkitimes.fi^$all
+||dawn.com^$all
+||chinadailyhk.com^$all
+||cgtn.com^$all
+||dknews.kz^$all
+
+! One would think a Japanese service would be less keen on having іllegіmate рrоpagаnda on their service(s). (https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiNonNewsList.txt)
+rakuten.tv###cgtn-documentary
+rakuten.tv###cgtn
+rakuten.tv##div[data-testid=garden] > div[data-testid=lists]:has(div[data-testid^=free-cgtn])
+rakuten.tv##a[id*=jinping]
+rakuten.tv##a[id*=xinjiang]
+rakuten.tv###card-china-through-the-lenses--0
+rakuten.tv###card-china-aspirations--0
+rakuten.tv###card-classic-quotes-by-xi-jinping--0
+rakuten.tv###card-refined-in-china-xinjiang--0
+rakuten.tv###card-hong-kong-forging-an-unbreakable-bond--0
+rakuten.tv###card-the-call-of-the-silk-road--0
+rakuten.tv###card-earth-summit-mission--0
+rakuten.tv###card-human-carbon-footprint--0
+rakuten.tv###card-wildlife-haven-china--0
+rakuten.tv###card-zero-hour-climate-change-in-china--0
+rakuten.tv###card-desert-jewel-dunhuang--0
+rakuten.tv###card-land-of-diversity--0
+
+! To browse more easily through AdGuard Filters' and EasyList's issue trackers
+github.com#?#div[class^=IssueRow-module__row-]:has(a:is([href*="/AdguardFilters/"],[href*="/easylist/"]):has-text(/^.*\.cn(/.*)?$/))
+
+! Designated «•СN» versions of Winget packages
+||cvte.com^$all
+://cc-download.wondershare.cc^$all
+://download.bazhuayu.com^$all
+://yuntu-f.kuaicad.com^
+||cn-*.myhuaweicloud.com^
+||xylink.com^$all
+||qbox.me^
+||bcebos.com^
+
+! CN-based programs in Winget, so as to not download CN stuff by accident without knowing they were CN stuff.
+||twinkstar.com^
+||seewo.com^
+||360tpcdn.com^
+||115.com^
+||ucweb.com^
+||ruanmei.com^
+
+!#include Conversions%20of%20AdGuard%20Services%20lists/aliexpress.txt
+
+! >>>>>>>> https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/Conversions%20of%20AdGuard%20Services%20lists/aliexpress.txt
+
+! Title: Conversion of AdGuard Services Lists — AliExpress
+
+||ae-rus.net^$all
+||ae-rus.ru^$all
+||aliexpress.com^$all
+||aliexpress.ru^$all
+! <<<<<<<< https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/Conversions%20of%20AdGuard%20Services%20lists/aliexpress.txt
+!#include Conversions%20of%20AdGuard%20Services%20lists/bilibili.txt
+
+! >>>>>>>> https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/Conversions%20of%20AdGuard%20Services%20lists/bilibili.txt
+
+! Title: Conversion of AdGuard Services Lists — Bilibili
+
+||acg.tv^$all
+||acgvideo.com^$all
+||animetamashi.cn^$all
+||animetamashi.com^$all
+||anitama.cn^$all
+||anitama.net^$all
+||b23.tv^$all
+||bigfun.cn^$all
+||bili22.cn^$all
+||bili2233.cn^$all
+||bili23.cn^$all
+||bili33.cn^$all
+||biliapi.com^$all
+||biliapi.net^$all
+||bilibili.cc^$all
+||bilibili.cn^$all
+||bilibili.net^$all
+||bilibiligame.cn^$all
+||bilibiligame.co^$all
+||bilibiligame.net^$all
+||bilibilipay.cn^$all
+||bilibilipay.com^$all
+||bilicdn1.com^$all
+||bilicdn2.com^$all
+||bilicdn3.com^$all
+||bilicdn4.com^$all
+||bilicdn5.com^$all
+||biligame.co^$all
+||biligame.com^$all
+||biligame.net^$all
+||biligo.com^$all
+||biliimg.com^$all
+||biliintl.com^$all
+||bilivideo.cn^$all
+||bilivideo.com^$all
+||bilivideo.net^$all
+||dreamcast.hk^$all
+||hdslb.com^$all
+||hdslb.org^$all
+||im9.com^$all
+||maoercdn.com^$all
+||mincdn.com^$all
+||yo9.com^$all
+|upos-hz-mirrorakam.akamaized.net^$all
+! <<<<<<<< https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/Conversions%20of%20AdGuard%20Services%20lists/bilibili.txt
+!#include Conversions%20of%20AdGuard%20Services%20lists/douban.txt
+
+! >>>>>>>> https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/Conversions%20of%20AdGuard%20Services%20lists/douban.txt
+
+! Title: Conversion of AdGuard Services Lists — Douban
+
+||douban.com^$all
+||douban.fm^$all
+||doubanio.com^$all
+! <<<<<<<< https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/Conversions%20of%20AdGuard%20Services%20lists/douban.txt
+!#include Conversions%20of%20AdGuard%20Services%20lists/iqiyi.txt
+
+! >>>>>>>> https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/Conversions%20of%20AdGuard%20Services%20lists/iqiyi.txt
+
+! Title: Conversion of AdGuard Services Lists — Iqiyi
+
+||iq.com^$all
+||iqiyi.com^$all
+||iqiyipic.com^$all
+||pps.tv^$all
+||ppsimg.com^$all
+||qiyi.com^$all
+||qiyipic.com^$all
+||qy.net^$all
+! <<<<<<<< https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/Conversions%20of%20AdGuard%20Services%20lists/iqiyi.txt
+!#include Conversions%20of%20AdGuard%20Services%20lists/qq.txt
+
+! >>>>>>>> https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/Conversions%20of%20AdGuard%20Services%20lists/qq.txt
+
+! Title: Conversion of AdGuard Services Lists — QQ
+
+||qq.com^$all,domain=~wx.qq.com|~weixin.qq.com
+||qq-video.cdn-go.cn^$all
+||url.cn^$all
+! <<<<<<<< https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/Conversions%20of%20AdGuard%20Services%20lists/qq.txt
+!#include Conversions%20of%20AdGuard%20Services%20lists/tiktok.txt
+
+! >>>>>>>> https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/Conversions%20of%20AdGuard%20Services%20lists/tiktok.txt
+
+! Title: Conversion of AdGuard Services Lists — TikTok
+
+||p16-tiktokcdn-com.akamaized.net^$all
+||amemv.com^$all
+||bdurl.com^$all
+||bytecdn.cn^$all
+||bytedance.map.fastly.net^$all
+||bytedapm.com^$all
+||bytegoofy.com^$all
+||byteimg.com^$all
+||byteoversea.com^$all
+||bytescm.com^$all
+||douyin.com^$all
+||douyincdn.com^$all
+||douyinpic.com^$all
+||douyinliving.com^$all
+||douyinstatic.com^$all
+||douyinvod.com^$all
+||huoshan.com^$all
+||huoshanstatic.com^$all
+||huoshanzhibo.com^$all
+||muscdn.com^$all
+||musical.ly^$all
+||pstatp.com^$all
+||snssdk.com^$all
+||tiktok.com^$all
+||tiktokcdn.com^$all
+||tiktokv.com^$all
+||tiktokcdn-us.com^$all
+||ttlivecdn.com.c.bytefcdn-oversea.com^$all
+||ttlivecdn.com^$all
+||p16-tiktok-*.ibyteimg.com^$all
+||v*.tiktokcdn-eu.com^$all
+||zijieapi.com^$all
+||tiktokrow-cdn.com^$all
+! <<<<<<<< https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/Conversions%20of%20AdGuard%20Services%20lists/tiktok.txt
+!#include Conversions%20of%20AdGuard%20Services%20lists/wechat.txt
+
+! >>>>>>>> https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/Conversions%20of%20AdGuard%20Services%20lists/wechat.txt
+
+! Title: Conversion of AdGuard Services Lists — WeChat
+
+||wechat.com^$all
+||weixin.qq.com^$all
+||weixin.qq.com.cn^$all
+||weixinbridge.com^$all
+||wx.qq.com^$all
+! <<<<<<<< https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/Conversions%20of%20AdGuard%20Services%20lists/wechat.txt
+!#include Conversions%20of%20AdGuard%20Services%20lists/weibo.txt
+
+! >>>>>>>> https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/Conversions%20of%20AdGuard%20Services%20lists/weibo.txt
+
+! Title: Conversion of AdGuard Services Lists — Weibo
+
+||wbimg.com^$all
+||wbimg.cn^$all
+||wcdn.cn^$all
+||weibo.cn^$all
+||weibo.com^$all
+||weibo.com.cn^$all
+||weibocdn.com^$all
+! <<<<<<<< https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/Conversions%20of%20AdGuard%20Services%20lists/weibo.txt
+!#include Conversions%20of%20AdGuard%20Services%20lists/zhihu.txt
+
+! >>>>>>>> https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/Conversions%20of%20AdGuard%20Services%20lists/zhihu.txt
+
+! Title: Conversion of AdGuard Services Lists — Zhihu
+
+||zhihu.com^$all
+||zhimg.com^$all
+! <<<<<<<< https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/Conversions%20of%20AdGuard%20Services%20lists/zhihu.txt
+!#include Conversions%20of%20AdGuard%20Services%20lists/xiaohongshu.txt
+! >>>>>>>> https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/Conversions%20of%20AdGuard%20Services%20lists/xiaohongshu.txt
+
+! Title: Conversion of AdGuard Services Lists — Xiaohongshu
+
+||xiaohongshu.com^$all
+||xhscdn.com^$all
+||xhscdn.net^$all
+||xiaohongshu.net^$all
+||xiaohongshu.com.my^$all
+! <<<<<<<< https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/Conversions%20of%20AdGuard%20Services%20lists/xiaohongshu.txt
+! Additional entries for Хіaоhоngshu
+||idvo1ty.qiniudns.com^$all
+!#if !adguard_app_windows
+!#if !adguard_app_mac
+!#if !adguard_app_android
+!#if !adguard_app_cli
+||43.159.24.58^$all
+!#endif
+!#endif
+!#endif
+!#endif
+!#if !adguard
+$all,ipaddress=43.159.24.58
+!#endif
+!#if adguard
+!#if (adguard_app_windows || adguard_app_mac || adguard_app_android || adguard_app_cli)
+43.159.24.58$network
+!#endif
+!#endif
+
+!#endif
+!#endif
