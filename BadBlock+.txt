@@ -9034,18 +9034,12 @@ reddit.com##+js(set, Fingerprint2, undefined)
 ||filmweb.pl/report
 ||fandom.com/csp-logger
 /creep.js$script,domain=~abrahamjuliot.github.io|~creepjs-api.web.app
-@@||browserleaks.com^$domain=browserleaks.org
-@@||browserleaks.org^$domain=browserleaks.com
 @@||abrahamjuliot.github.io^$domain=creepjs-api.web.app
 @@||creepjs-api.web.app^$domain=abrahamjuliot.github.io
 @@||stats.lineageos.org^$first-party
-/browser_fingerprint*$script
 /detect-font-loading*$script
 /evercookie/*
 /evercookie*$script
-#/fingerprint*$script
-/font-detect*$script
-/fontdetect*$script
 /font-detective*$script
 #/hsts*$script
 /jquery.browser-fingerprint*$script
@@ -9672,7 +9666,6 @@ www.aainflight.com##._sponsorContainer_pfqu5_1
 ||adkernel.com^
 ||adlane.io^
 ||adlightning.com^
-||admanager.opera.com^
 ||admanmedia.com^
 ||admantx.com^
 ||admatic.de^
@@ -9715,7 +9708,6 @@ www.aainflight.com##._sponsorContainer_pfqu5_1
 ||ads.foxnews.com^
 ||ads.indystar.com^
 ||ads.lordlucky.com^
-||ads.opera.com^
 ||ads.oppomobile.com^
 ||ads.pandora.com^
 ||ads.pinterest.com^
@@ -9808,7 +9800,7 @@ www.aainflight.com##._sponsorContainer_pfqu5_1
 ||adways.com.cn^
 ||adways.kr^
 ||adways.net^
-||adx.opera.com^
+||adx.^
 ||adxcel-ec2.com^
 ||adyoulike.com^
 ||adyoulike.github.io^
@@ -12146,7 +12138,7 @@ www.aainflight.com##._sponsorContainer_pfqu5_1
 ||lamplow.com^
 ||landbot.io^
 ||late6year.com^
-||lati-speeddials.opera.com^
+||lati-speeddials.^
 ||launchdarkly-com.netlify.app^
 ||launchdarkly-marketingsite.cdn.prismic.io^
 ||launchdarkly.com^
@@ -13521,8 +13513,6 @@ www.aainflight.com##._sponsorContainer_pfqu5_1
 ||site-config.com^
 ||site.com^
 ||site.com.edgekey.net^
-||sitecheck.opera.com^
-||sitecheck2.opera.com^
 ||sitecore.com^
 ||sitecorecloud.io^
 ||sitecorecontenthub.cloud^
@@ -13639,8 +13629,8 @@ www.aainflight.com##._sponsorContainer_pfqu5_1
 ||specialscissors.com^
 ||spectacularstamp.com^
 ||speedcurve.com^
-||speeddials.geo.opera.com^
-||speeddials.opera.com^
+||speeddials.geo.^
+||speeddials.^
 ||spellsalsa.com^
 ||spideraf-edge-101747378.ap-northeast-1.elb.amazonaws.com^
 ||spideraf.com^
