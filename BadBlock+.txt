@@ -9884,7 +9884,6 @@ www.aainflight.com##._sponsorContainer_pfqu5_1
 ||amgdgt.com^
 ||amigoclienttesting.io^
 ||amigodev.io^
-||amiunique.org^
 ||amobee.com^
 ||amos5lynn.com^
 ||amplitude.com^
@@ -10401,7 +10400,6 @@ www.aainflight.com##._sponsorContainer_pfqu5_1
 ||browser-intake-us3-datadoghq.com^
 ||browser-intake-us5-datadoghq.com^
 ||browser-update.org^
-||browserleaks.com^
 ||browserleaks.org^
 ||browsiprod.com^
 ||bruisebaseball.com^
